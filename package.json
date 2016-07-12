@@ -1,0 +1,25 @@
+{
+  "name": "collaborative-list",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "meteor-node-stubs": "~0.2.0",
+    "react": "^15.2.1",
+    "react-dom": "^15.2.1"
+  },
+  "version": "1.0.0",
+  "description": "Collaborative list for freelancers",
+  "main": "index.js",
+  "author": "Jose Moreno",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/10537/collaborative-list.git"
+  },
+  "bugs": {
+    "url": "https://github.com/10537/collaborative-list/issues"
+  },
+  "homepage": "https://github.com/10537/collaborative-list#readme"
+}
