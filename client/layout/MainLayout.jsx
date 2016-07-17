@@ -19,15 +19,19 @@ export const MainLayout = ({content}) => (
                       <ul id="nav" className="nav navbar-nav">
                           <li className="current"><a href="/">Home</a></li>
                           <li><a href="#features">Pricing</a></li>
-                          <li><a href="#works">Work</a></li>
                           <li><a href="#team">Team</a></li>
-                          <li><a href="http://google.com">Contact</a></li>
+                          <li><a href="#contact">Contact</a></li>
                       </ul>
                   </nav>
               </div>
           </header>
+          <div className="row">
+            <div className="col-xs-12 col-md-12">
+              <img src="img/banner.jpg" alt="img" />
+            </div>
+          </div>
         <main>
-          
+            { content }
         </main>
       </div>
 )
