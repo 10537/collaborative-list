@@ -21,6 +21,7 @@ export const MainLayout = ({content}) => (
                           <li><a href="#features">Pricing</a></li>
                           <li><a href="#team">Team</a></li>
                           <li><a href="#contact">Contact</a></li>
+                          <li><a href="#login">Login</a></li>
                       </ul>
                   </nav>
               </div>
