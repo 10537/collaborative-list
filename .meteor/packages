@@ -19,8 +19,11 @@ ecmascript              # Enable ECMAScript2015+ syntax in app code
 
 autopublish             # Publish all data to the clients (for prototyping)
 insecure                # Allow all DB writes from clients (for prototyping)
-kadira:flow-router
 meteortoys:allthings
+accounts-base
 accounts-password
-std:accounts-ui
-kadira:flow-router-ssr
+useraccounts:unstyled
+fortawesome:fontawesome
+kadira:flow-router
+thereactivestack:blazetoreact
+aldeed:template-extension

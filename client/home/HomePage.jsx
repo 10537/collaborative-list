@@ -7,6 +7,11 @@ export default class HomePage extends Component {
         render() {
            return (
              <div>
+                 <div className="row">
+                   <div className="col-xs-12 col-md-12">
+                     <img src="img/banner.jpg" alt="img" />
+                   </div>
+                 </div>
                  <section id="features" className="features">
                    <div className="container">
                      <div className="row">

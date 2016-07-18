@@ -1,5 +1,4 @@
 import React from 'react';
-import AccountsUI from '../AccountUI.jsx';
 
 export const MainLayout = ({content}) => (
         <div className="main-layout">
@@ -27,11 +26,6 @@ export const MainLayout = ({content}) => (
                   </nav>
               </div>
           </header>
-          <div className="row">
-            <div className="col-xs-12 col-md-12">
-              <img src="img/banner.jpg" alt="img" />
-            </div>
-          </div>
         <main>
             { content }
         </main>
