@@ -1,9 +1,10 @@
 import React, {Component} from 'react';
+import TrackerReact from 'meteor/ultimatejs:tracker-react';
 import FooterPage from '../home/FooterPage.jsx';
 
 const AccountUI = BlazeToReact('atForm');
 
-export default class LoginAccount extends Component {
+export default class LoginAccount extends TrackerReact(Component) {
   render () {
     const currentPanel = Meteor.userId() ? <p>Welcome!</p> : <AccountUI/>
     return (

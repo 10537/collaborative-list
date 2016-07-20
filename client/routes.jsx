@@ -19,7 +19,7 @@ FlowRouter.route("/", {
 });
 
 FlowRouter.route("/login", {
-	action(params) {
+	action() {
 		mount(MainLayout, {
 			content: (<LoginAccount/>),
 			navbar: (<NavBar/>),

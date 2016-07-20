@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
+import TrackerReact from 'meteor/ultimatejs:tracker-react';
 import TeamPage from './TeamPage.jsx';
 import ContactPage from './ContactPage.jsx';
 
-export default class HomePage extends Component {
+export default class HomePage extends TrackerReact(Component) {
         render() {
            return (
              <div>

@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
+import TrackerReact from 'meteor/ultimatejs:tracker-react';
 
-export default class NavBar extends Component {
+export default class NavBar extends TrackerReact (Component) {
         logoutAccount (event) {
           event.preventDefault();
           Meteor.logout();
