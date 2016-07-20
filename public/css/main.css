@@ -41,7 +41,7 @@ a, a:focus, a:hover {
 }
 
 a:focus, a:hover {
-    color: #6CB670;
+    color: #898AC0;
 }
 
 h1, h2, h3,
@@ -743,4 +743,22 @@ label.error {
   position: fixed;
   right: 25px;
   z-index: 9;
+}
+
+
+/*=========================================
+	Login
+==========================================*/
+.login-content {
+  margin: 80px;
+  text-align: center;
+}
+.login-modal {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: inline-block;
+  border: 5px solid;
+  border-radius: 10px;
+  border-color: #898AC0;
+  width: 100%;
 }

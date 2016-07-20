@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import TeamPage from './TeamPage.jsx';
-import FooterPage from './FooterPage.jsx';
 import ContactPage from './ContactPage.jsx';
 
 export default class HomePage extends Component {
@@ -86,7 +85,6 @@ export default class HomePage extends Component {
                  </section>
                  <TeamPage />
                  <ContactPage />
-                 <FooterPage />
            </div>
            )}
 }
