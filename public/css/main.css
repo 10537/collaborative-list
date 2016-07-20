@@ -783,7 +783,7 @@ label.error {
 .login-modal button {
   display: inline-block;
   background-color: #898AC0;
-  border: 3px;
+  border: 3px solid;
   color: #fff;
   text-align: center;
   border-radius: 3px;
@@ -798,4 +798,33 @@ label.error {
   display: inline-block;
   border: none;
   width: 100%;
+}
+
+.button-content button {
+  display: inline-block;
+  background-color: #898AC0;
+  color: #fff;
+  border-radius: 5px;
+  border: 2px solid;
+}
+
+.button-content button:hover {
+  display: inline-block;
+  background-color: #525273;
+  color: #fff;
+  border-radius: 5px;
+  border: 2px solid;
+
+}
+
+/*=========================================
+	Main Dashboard
+==========================================*/
+
+.bert-alert.item-added {
+  background: #898AC0;
+  color: #fff;
+  border: 1px solid;
+  border-color: black;
+  border-radius: 5px;
 }
