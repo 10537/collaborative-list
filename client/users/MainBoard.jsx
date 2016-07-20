@@ -28,6 +28,10 @@ export default class MainBoard extends TrackerReact(Component) {
   render () {
     return (
       <div>
+        <div className="sec-title text-center">
+          <h2>List Dashboard</h2>
+          <div className="devider"><i className="fa fa-heart-o fa-lg"></i></div>
+        </div>
         <div className="main-board">
           <div className="button-content">
           <button type="button" onClick={this.addBoard.bind(this)}>

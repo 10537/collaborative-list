@@ -794,7 +794,10 @@ label.error {
 ==========================================*/
 
 .main-board {
-  margin: 100px;
+  margin-top: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 100px;
   display: inline-block;
   border: none;
   width: 100%;
