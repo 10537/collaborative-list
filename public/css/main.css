@@ -333,10 +333,10 @@ top: -8px;
   border-radius: 3px;
 }
 
-.service-desc button.hover {
+.service-desc button:hover {
   display: inline-block;
-  background-color: #FFF;
-  color: #898AC0;
+  background-color: #525273;
+  color: #fff;
   text-align: center;
   border: solid 1px;
 }
