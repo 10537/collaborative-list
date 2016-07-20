@@ -333,7 +333,6 @@ top: -8px;
   border-radius: 3px;
 }
 
-.service-desc button:hover,
 .service-desc button.hover {
   display: inline-block;
   background-color: #FFF;
@@ -760,5 +759,43 @@ label.error {
   border: 5px solid;
   border-radius: 10px;
   border-color: #898AC0;
+  width: 100%;
+}
+
+.login-modal a{
+  color: #525273;
+
+  -webkit-transition: all .3s ease-in 0s;
+     -moz-transition: all .3s ease-in 0s;
+      -ms-transition: all .3s ease-in 0s;
+       -o-transition: all .3s ease-in 0s;
+          transition: all .3s ease-in 0s;
+}
+.login-modal a, a:focus, a:hover {
+    text-decoration: none;
+    outline: 0;
+}
+
+.login-modal a:focus, a:hover {
+    color: #898AC0;
+}
+
+.login-modal button {
+  display: inline-block;
+  background-color: #898AC0;
+  border: 3px;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+}
+
+/*=========================================
+	Main Dashboard
+==========================================*/
+
+.main-board {
+  margin: 100px;
+  display: inline-block;
+  border: none;
   width: 100%;
 }
