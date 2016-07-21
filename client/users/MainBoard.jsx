@@ -4,6 +4,24 @@ import TrackerReact from 'meteor/ultimatejs:tracker-react';
 listBoards = new Mongo.Collection("listBoards");
 
 export default class MainBoard extends TrackerReact(Component) {
+
+  constructor () {
+    super();
+    this.state = {
+      subscription: {
+        listboards: Meteor.subscribe("userListBoards")
+      }
+    }
+  }
+
+  componentwillUnmount() {
+    this.state.subscription.listboards.stop();
+  }
+
+  boardItems () {
+    return listBoards.find().fetch();
+  }
+
   addBoard (event) {
     event.preventDefault();
     Meteor.call("addListBoard", function(error, result){
@@ -22,9 +40,6 @@ export default class MainBoard extends TrackerReact(Component) {
     });
   }
 
-  boardItems () {
-    return listBoards.find().fetch();
-  }
   render () {
     return (
       <div>
