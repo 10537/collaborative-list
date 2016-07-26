@@ -14,4 +14,10 @@ Meteor.methods({
 				owner: Meteor.userId()
 		});
 	},
+	deleteListBoard(boarditem) {
+		if (!Meteor.userId()) {
+			throw new Meteor.Error("Not-Authorized");
+		}
+		listBoards.remove({_id:boarditem._id});
+	},
 });
