@@ -57,10 +57,7 @@ export default class MainBoard extends TrackerReact(Component) {
             </button>
             </div>
             <div className="pull-right">
-              <button type="button" onClick={this.addBoard.bind(this)}>
-                <i className="fa fa-plus-square fa-1x" aria-hidden="true"></i>
-                &nbsp;Add
-              </button>
+              Welcome User! 
             </div>
             <div className="board-item">
               {this.boardItems().map( (item)=>{

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import TrackerReact from 'meteor/ultimatejs:tracker-react';
 
-export default class BoardItem extends TrackerReact(Component) {
+export default class BoardItem extends Component {
 
   deleteBoard () {
     Meteor.call("deleteListBoard", this.props.boarditem)

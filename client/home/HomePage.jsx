@@ -3,7 +3,7 @@ import TrackerReact from 'meteor/ultimatejs:tracker-react';
 import TeamPage from './TeamPage.jsx';
 import ContactPage from './ContactPage.jsx';
 
-export default class HomePage extends TrackerReact(Component) {
+export default class HomePage extends Component {
         render() {
            return (
              <div>

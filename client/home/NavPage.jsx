@@ -14,10 +14,10 @@ export default class NavBar extends TrackerReact (Component) {
                  <div className="container">
                     <div className="navbar-header">
                        <button type="button" className="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                     <span className="sr-only">Toggle navigation</span>
-                                     <i className="fa fa-bars fa-2x"></i>
-                                 </button>
-                                 <a className="navbar-brand" href="#body">
+                           <span className="sr-only">Toggle navigation</span>
+                           <i className="fa fa-bars fa-2x"></i>
+                       </button>
+                       <a className="navbar-brand" href="/">
                          <h1 id="logo">
                            <img src="img/logo.png" alt="Collaborative"/>
                          </h1>
