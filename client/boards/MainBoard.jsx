@@ -8,19 +8,19 @@ export default class MainBoard extends TrackerReact(Component) {
 
   constructor () {
     super();
+    const listboards = Meteor.subscribe("userListBoards");
     this.state = {
-      subscription: {
-        listboards: Meteor.subscribe("userListBoards")
-      }
+      ready: listboards.ready(),
+      subscription: listboards,
     }
   }
 
-  componentwillUnmount() {
-    this.state.subscription.listboards.stop();
+  componentWillUnmount() {
+    this.state.subscription.stop();
   }
 
   boardItems () {
-    return listBoards.find().fetch();
+    return listBoards.find({}).fetch();
   }
 
   addBoard (event) {
@@ -57,7 +57,7 @@ export default class MainBoard extends TrackerReact(Component) {
             </button>
             </div>
             <div className="pull-right">
-              Welcome User! 
+              Welcome User {this.state.ready}!
             </div>
             <div className="board-item">
               {this.boardItems().map( (item)=>{

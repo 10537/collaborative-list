@@ -3,7 +3,7 @@ import TrackerReact from 'meteor/ultimatejs:tracker-react';
 
 const AccountUI = BlazeToReact('atForm');
 
-export default class AccountForm extends TrackerReact(Component) {
+export default class AccountForm extends Component {
   render () {
     return (
     <div>
