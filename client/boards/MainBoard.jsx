@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import TrackerReact from 'meteor/ultimatejs:tracker-react';
+import BoardItem from './BoardItem.jsx';
 
 listBoards = new Mongo.Collection("listBoards");
 
@@ -42,22 +43,24 @@ export default class MainBoard extends TrackerReact(Component) {
 
   render () {
     return (
-      <div>
-        <div className="sec-title text-center">
-          <h2>List Dashboard</h2>
-          <div className="devider"><i className="fa fa-heart-o fa-lg"></i></div>
-        </div>
-        <div className="main-board">
-          <div className="button-content">
-          <button type="button" onClick={this.addBoard.bind(this)}>
-            <i className="fa fa-plus-square" aria-hidden="true"></i>
-            &nbsp;Add
-          </button>
+      <div className="container">
+        <div className="row">
+          <div className="sec-title text-center">
+            <h2>List Dashboard</h2>
+            <div className="devider"><i className="fa fa-heart-o fa-lg"></i></div>
           </div>
-          <div className="board-item">
-            {this.boardItems().map( (item)=>{
-    					return <div key={item._id}><p>{item.name}</p><p>{item.description}</p></div>
-    				})}
+          <div className="main-board">
+            <div className="button-content">
+            <button type="button" onClick={this.addBoard.bind(this)}>
+              <i className="fa fa-plus-square" aria-hidden="true"></i>
+              &nbsp;Add
+            </button>
+            </div>
+            <div className="board-item">
+              {this.boardItems().map( (item)=>{
+      					return <BoardItem key={item._id} boarditem={item}/>
+      				})}
+            </div>
           </div>
         </div>
       </div>

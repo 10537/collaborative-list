@@ -160,10 +160,13 @@ body > section,
 
 .navbar-brand {
   padding: 0;
+  position: absolute;
 }
 
 .navbar-nav li a {
 	border-top: 1px solid transparent;
+  height: 100%;
+  width: 100%;
 }
 
 .navbar-nav li a.current,
@@ -795,9 +798,7 @@ label.error {
 
 .main-board {
   margin-top: 10px;
-  margin-left: 100px;
-  margin-right: 100px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   display: inline-block;
   border: none;
   width: 100%;
@@ -830,4 +831,30 @@ label.error {
   border: 1px solid;
   border-color: black;
   border-radius: 5px;
+}
+
+.board-item {
+  border: none;
+}
+
+.item-title {
+  background-color: #898AC0;
+  border: 1px solid;
+  border-color: black;
+  border-radius: 5px;
+  display: inline-block;
+  color: #fff;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.item-title:hover {
+  background-color: rgb(190, 137, 192);
+  border: 1px solid;
+  border-color: black;
+  border-radius: 5px;
+  display: inline-block;
+  color: #fff;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
