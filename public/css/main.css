@@ -808,8 +808,10 @@ label.error {
   display: inline-block;
   background-color: #898AC0;
   color: #fff;
+  font-size: 20px;
   border-radius: 5px;
-  border: 2px solid;
+  border: 1px solid;
+  border-color: black;
 }
 
 .button-content button:hover {

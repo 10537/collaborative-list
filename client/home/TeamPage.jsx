@@ -29,7 +29,7 @@ export default class TeamPage extends Component {
                              </ul>
                            </figcaption>
                          </div>
-                         <h4>John Filmr Doe</h4>
+                         <h4>Javier Carrasco</h4>
                          <span>Managing Director</span>
                        </figure>
 
@@ -46,7 +46,7 @@ export default class TeamPage extends Component {
                              </ul>
                            </figcaption>
                          </div>
-                         <h4>Martin Matrone</h4>
+                         <h4>José Moreno</h4>
                          <span>Lead Developer</span>
                        </figure>
                      </div>
