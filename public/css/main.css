@@ -846,8 +846,7 @@ label.error {
   border-radius: 5px;
   display: inline-block;
   color: #fff;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 16px;
 }
 
 .item-title:hover {
@@ -858,6 +857,15 @@ label.error {
   border-radius: 5px;
   display: inline-block;
   color: #fff;
-  margin-top: 8px;
-  margin-bottom: 8px;
+  margin-top: 16px;
+}
+
+.delete-button {
+  color: #898AC0;
+  margin-top: 3px;
+}
+
+.delete-button:hover {
+  color: rgb(190, 137, 192);
+  margin-top: 3px;
 }
