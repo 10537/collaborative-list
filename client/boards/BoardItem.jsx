@@ -7,9 +7,13 @@ export default class BoardItem extends Component {
     Meteor.call("deleteListBoard", this.props.boarditem)
   }
 
+  goToBoard () {
+    Bert.alert('Click event Testing', 'danger', 'growl-top-right' );
+  }
+
   render () {
     return (
-      <div className="row">
+      <div className="row" onClick={this.goToBoard.bind(this)}>
         <div className="item-title col-sm-12">
           {this.props.boarditem.name}
           <div className="row">
