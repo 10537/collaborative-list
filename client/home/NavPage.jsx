@@ -1,11 +1,13 @@
 import React, {Component} from 'react';
 import ReactDOM from 'react-dom';
 import TrackerReact from 'meteor/ultimatejs:tracker-react';
+import { FlowRouter } from 'meteor/kadira:flow-router';
 
 export default class NavBar extends TrackerReact (Component) {
         logoutAccount (event) {
           event.preventDefault();
           Meteor.logout();
+          FlowRouter.go('/login');
         }
 
         render() {
