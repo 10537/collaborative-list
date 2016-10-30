@@ -1,4 +1,5 @@
 
+
 /* =================================== */
 /*	Basic Style
 /* =================================== */
@@ -868,6 +869,15 @@ label.error {
 .delete-button:hover {
   color: rgb(190, 137, 192);
   margin-top: 3px;
+}
+
+.board-form input {
+  border: 1px solid;
+  border-color: black;
+  border-radius: 3px;
+  display: inline-block;
+  font-size: 16px;
+  width: 50%;
 }
 
 #banner {

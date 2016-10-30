@@ -51,12 +51,8 @@ export default class MainBoard extends TrackerReact(Component) {
             <div className="devider"><i className="fa fa-heart-o fa-lg"></i></div>
           </div>
           <div className="main-board">
-            <div className="button-content center">
-              <BoardItemForm/>
-            <button type="button" onClick={this.addBoard.bind(this)}>
-              <i className="fa fa-plus-square fa-1x" aria-hidden="true"></i>
-              &nbsp;Add
-            </button>
+            <div className="button-content">
+              <center><BoardItemForm/></center>
             </div>
             <div className="pull-right">
               Welcome User {this.state.ready}!
