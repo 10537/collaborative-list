@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import TrackerReact from 'meteor/ultimatejs:tracker-react';
 import BoardItem from './BoardItem.jsx';
+import BoardItemForm from './BoardItemForm.jsx';
 
 listBoards = new Mongo.Collection("listBoards");
 
@@ -50,7 +51,8 @@ export default class MainBoard extends TrackerReact(Component) {
             <div className="devider"><i className="fa fa-heart-o fa-lg"></i></div>
           </div>
           <div className="main-board">
-            <div className="button-content pull-left">
+            <div className="button-content center">
+              <BoardItemForm/>
             <button type="button" onClick={this.addBoard.bind(this)}>
               <i className="fa fa-plus-square fa-1x" aria-hidden="true"></i>
               &nbsp;Add
