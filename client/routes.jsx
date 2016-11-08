@@ -8,6 +8,7 @@ import NavBar from './home/NavPage.jsx';
 import FooterPage from './home/FooterPage.jsx';
 import HomePage from './home/HomePage.jsx';
 import MainBoard from './boards/MainBoard.jsx';
+import MainList from './lists/MainList.jsx'
 
 FlowRouter.route("/", {
 	action() {
@@ -38,6 +39,21 @@ FlowRouter.route("/dashboards", {
 	action() {
 		mount(MainLayout, {
 			content: (<MainBoard />),
+			navbar: (<NavBar />),
+			footer: (<FooterPage />)
+		})
+	}
+});
+
+FlowRouter.route("/listboards", {
+	triggersEnter() {
+		if (!Meteor.userId()) {
+			FlowRouter.go("/login")
+		}
+	},
+	action() {
+		mount(MainLayout, {
+			content: (<MainList />),
 			navbar: (<NavBar />),
 			footer: (<FooterPage />)
 		})
