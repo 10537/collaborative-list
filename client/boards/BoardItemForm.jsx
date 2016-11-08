@@ -5,7 +5,8 @@ export default class BoardItemForm extends Component {
 
   addBoard (event) {
     event.preventDefault();
-    Meteor.call("addListBoard", function(error, result){
+    console.log(this);
+    Meteor.call("addListBoard", this.refs.BoardName.value, function(error, result){
       if(error){
         Bert.alert('I cant add the item', 'danger', 'growl-top-right' );
       }
@@ -19,16 +20,17 @@ export default class BoardItemForm extends Component {
         });
       }
     });
+    this.refs.BoardName.value = "";
   }
 
   render () {
     return (
         <div className="board-form col-sm-12 col-xs-12">
-            <input type="text" name="BoardName"
+            <input type="text" ref="BoardName" id="BoardName" name="BoardName"
               placeholder="Type your name board"/>
             <button type="button" onClick={this.addBoard.bind(this)}>
               <i className="fa fa-plus-square fa-1x" aria-hidden="true"></i>
-              &nbsp;Create Board
+              &nbsp;&nbsp;Adds
             </button>
         </div>
     )

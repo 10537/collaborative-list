@@ -8,7 +8,7 @@ export default class BoardItem extends Component {
   }
 
   goToBoard () {
-    Bert.alert('Click event Testing', 'danger', 'growl-top-right' );
+    FlowRouter.go('/listboards');
   }
 
   render () {
