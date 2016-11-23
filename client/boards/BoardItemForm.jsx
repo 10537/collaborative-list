@@ -25,7 +25,7 @@ export default class BoardItemForm extends Component {
 
   render () {
     return (
-        <div className="board-form col-sm-12 col-xs-12">
+        <div className="board-form task-btn col-sm-12 col-xs-12">
             <input type="text" ref="BoardName" id="BoardName" name="BoardName"
               placeholder="Type your name board"/>
             <button type="button" onClick={this.addBoard.bind(this)}>

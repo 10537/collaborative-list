@@ -51,7 +51,7 @@ export default class MainBoard extends TrackerReact(Component) {
             <div className="devider"><i className="fa fa-heart-o fa-lg"></i></div>
           </div>
           <div className="main-board">
-            <div className="button-content">
+            <div>
               <center><BoardItemForm/></center>
             </div>
             <div className="pull-right">
