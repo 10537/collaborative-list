@@ -837,7 +837,11 @@ label.error {
 }
 
 .board-item {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  display: inline-block;
   border: none;
+  width: 100%;
 }
 
 .item-title {
@@ -871,13 +875,31 @@ label.error {
   margin-top: 3px;
 }
 
+.task-btn button {
+  display: inline-block;
+  background-color: #898AC0;
+  border: 3px;
+  color: #fff;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.task-btn button:hover {
+  display: inline-block;
+  background-color: #525273;
+  color: #fff;
+  text-align: center;
+  border: solid 1px;
+}
+
 .board-form input {
   border: 1px solid;
   border-color: black;
   border-radius: 3px;
   display: inline-block;
-  font-size: 16px;
+  font-size: 12px;
   width: 50%;
+  margin-right: 6px;
 }
 
 #banner {
