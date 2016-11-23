@@ -12,6 +12,7 @@ export default class NavBar extends TrackerReact (Component) {
 
         render() {
            const currentUser = Meteor.userId() ? <li className="logout"><a href="#" onClick={this.logoutAccount.bind(this)}>Logout</a></li> : <li><a href="/login">Login</a></li>;
+           const currentUserDashboard = Meteor.userId() ? <li><a href="/dashboards">Dashboard</a></li> : <div/>;
            return (
              <header id="navigation" className="navbar-fixed-top navbar">
                  <div className="container">
@@ -28,6 +29,7 @@ export default class NavBar extends TrackerReact (Component) {
                     </div>
                     <nav className="collapse navbar-collapse navbar-right" role="navigation">
                        <ul id="nav" className="nav navbar-nav">
+                           { currentUserDashboard }
                            <li className="current"><a href="/">Home</a></li>
                            <li><a href="#features">Pricing</a></li>
                            <li><a href="#team">Team</a></li>
