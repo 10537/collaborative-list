@@ -20,4 +20,18 @@ Meteor.methods({
 		}
 		listBoards.remove({_id:boarditem._id});
 	},
+	
+	addListItem(listItemTitle, listItemBoardID) {
+		if (!Meteor.userId()) {
+			throw new Meteor.Error("Not-Authorized");
+		}
+			listItems.insert({
+				name: 'Sample task',
+				description: 'Example task for prototipe',
+				createdAt: new Date(),
+				boardId: listItemBoardID,
+				owner: Meteor.userId()
+		});
+	},
+
 });
